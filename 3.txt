@@ -1,0 +1,32 @@
+ insert into departmen values(101,'mca');
+insert into departmen values(110,'mba');
+ insert into departmen values(111,'cs');
+
+ insert into stude values(1,'Abhi','s2','tvm',108,54,101);
+ insert into stude values(2,'Achu','s2','kollam',110,55,110);
+ insert into stude values(36,'Nazna','s1','kollam',98,49,110);
+ insert into stude values(37,'Nirmal','s2','tvm',152,76,101);
+insert into stude values(38,'Rahul','s2','tvm',178,89,111);
+
+ insert into staf values(101,'Arya',101,'hod',28000,'kozh');
+ insert into staf values(102,'Adharsh',101,'advisor',24000,'tn');
+insert into staf values(103,'Sneha',110,'Teacher',18000,'azh');
+ insert into staf values(104,'Sajin',111,'hod',32000,'tvm');
+insert into staf values(105,'Sajan',111,'assoc prof',30000,'klm');
+
+ insert into compan values(101,'tcs','tvm',2);
+ insert into compan values(102,'ibm','usa',12);
+ insert into compan values(103,'vipro','uk',5);
+
+insert into employe values(101,'Ajil',101,'teacher',26000,'tvm');
+insert into employe values(102,'Abhi',102,'teacher',32000,'klm');
+insert into employe values(103,'ahmed',103,'assoc prof',22000,'azh');
+
+
+a,  select stude.name,departmen.name from stude,departmen where stude.deptid=departmen.deptid order by departmen.name;
+b,   select name from employe;
+c,  select *  from staf where salary>20000;
+d,  select * from stude where percentage>80 and percentage<90;
+e,  select * from employe e,compan c where c.compid=e.c_id and no_of_employees>3;
+f,  
+
