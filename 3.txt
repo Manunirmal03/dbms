@@ -28,5 +28,11 @@ b,   select name from employe;
 c,  select *  from staf where salary>20000;
 d,  select * from stude where percentage>80 and percentage<90;
 e,  select * from employe e,compan c where c.compid=e.c_id and no_of_employees>3;
-f,  
+f,  select s.staffid,s.name from staf s,stude se where s.city=se.city and s.salary>25000;
+g, select e.* from employe e where e.c_id in(select compid from compan where no_of_employees =(select max(no_of_employees)from compan));
+h, select 
+i,  update staf set salary=salary+salary*10/100 where designation ='assoc prof';
+j,  select e.name from employe e ,compan c where e.city=c.city and e.c_id=c.compid;
+k,  select count(s.staffid),d.name from staf s,departmen d where s.deptid=d.deptid group by d.name order by d.name;
+
 
